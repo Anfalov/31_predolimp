@@ -11,7 +11,7 @@ razn_left = 1
 razn_right = 1
 mni = 0
 for i in range(1, n + 1):
-    if sums[i] - mn > razn:
+    if sums[i] - sums[mni] > razn:
         razn = sums[i] - sums[mni]
         razn_left = mni + 1
         razn_right = i
